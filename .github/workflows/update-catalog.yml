@@ -1,0 +1,32 @@
+name: Update catalog
+
+on:
+  schedule:
+    - cron: "17 6 * * 1"  # Mondays 06:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Regenerate CATALOG.md from the live model list
+        run: python scripts/update_catalog.py
+      - name: Commit if the catalog changed
+        run: |
+          if git diff --quiet -- CATALOG.md; then
+            echo "CATALOG.md is already current."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add CATALOG.md
+          git commit -m "Update model catalog"
+          git push
