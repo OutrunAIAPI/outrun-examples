@@ -1,0 +1,13 @@
+{
+  "name": "outrun-node-examples",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "chat": "node chat.mjs",
+    "stream": "node stream.mjs",
+    "image": "node image.mjs"
+  },
+  "dependencies": {
+    "openai": "^4.60.0"
+  }
+}

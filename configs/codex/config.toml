@@ -1,0 +1,40 @@
+# Codex config file
+#   macOS / Linux: ~/.codex/config.toml
+#   Windows:       %USERPROFILE%\.codex\config.toml
+# Base URL ends in /v1. Do not append /responses.
+
+model = "gpt-6.1-sol"
+model_provider = "outrun"
+model_reasoning_effort = "high"
+
+[model_providers.outrun]
+name = "Outrun"
+base_url = "https://api.outrun.to/v1"
+wire_api = "responses"
+env_key = "OUTRUN_API_KEY"
+
+# Windows alternative (only if Codex cannot see the OUTRUN_API_KEY variable):
+# delete the env_key line above and use this line instead, with your key in place of KEY.
+# experimental_bearer_token = "KEY"
+
+# All Outrun GPT models (gpt-6.1-sol is the default above).
+# Switch with: codex -p gpt-6-astra   (or: codex -m gpt-6-astra)
+[profiles."gpt-5.6-sol"]
+model = "gpt-5.6-sol"
+model_provider = "outrun"
+
+[profiles."gpt-6.1-sol"]
+model = "gpt-6.1-sol"
+model_provider = "outrun"
+
+[profiles."gpt-6-sol"]
+model = "gpt-6-sol"
+model_provider = "outrun"
+
+[profiles."gpt-6-astra"]
+model = "gpt-6-astra"
+model_provider = "outrun"
+
+[profiles."gpt-5.6-terra"]
+model = "gpt-5.6-terra"
+model_provider = "outrun"
