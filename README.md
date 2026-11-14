@@ -9,7 +9,7 @@
 
 # Outrun API examples
 
-**One OpenAI-compatible API key for 81 AI models: GPT, Claude, Gemini, Grok, DeepSeek, GLM,
+**One OpenAI-compatible API key for 96 AI models: GPT, Claude, Gemini, Grok, DeepSeek, GLM,
 Kimi, Qwen, MiniMax, uncensored and abliterated LLMs, plus image, video and speech models.**
 
 Outrun is a prepaid AI API. You top up one USD balance, and every request is billed per use at
