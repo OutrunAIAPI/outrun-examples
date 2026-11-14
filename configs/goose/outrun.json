@@ -1,0 +1,24 @@
+{
+  "name": "outrun",
+  "engine": "openai",
+  "display_name": "Outrun",
+  "description": "One OpenAI-compatible API key for GPT, Claude, Gemini, Grok, DeepSeek, GLM, Kimi, Qwen and MiniMax models.",
+  "api_key_env": "OUTRUN_API_KEY",
+  "base_url": "https://api.outrun.to/v1/chat/completions",
+  "models": [
+    { "name": "gpt-5.6-sol", "context_limit": 1050000, "supports_vision": true },
+    { "name": "claude-sonnet-5-5", "context_limit": 1000000, "supports_vision": true },
+    { "name": "gemini-3.8-flash", "context_limit": 1048576, "supports_vision": true },
+    { "name": "deepseek-v4-pro", "context_limit": 1000000 },
+    { "name": "glm-5.3", "context_limit": 1000000 },
+    { "name": "kimi-k3.1-pro", "context_limit": 1000000, "supports_vision": true }
+  ],
+  "supports_streaming": true,
+  "requires_auth": true,
+  "model_doc_link": "https://outrun.to/docs/api",
+  "setup_steps": [
+    "Create or sign in to your Outrun account at https://outrun.to/key",
+    "Create an API key and copy it",
+    "Paste the key above"
+  ]
+}

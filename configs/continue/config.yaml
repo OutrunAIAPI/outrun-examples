@@ -1,0 +1,34 @@
+# Continue (VS Code / JetBrains) config for Outrun.
+# Store your key as a Continue secret named OUTRUN_API_KEY; never paste it into this file.
+name: Outrun
+version: 0.0.1
+schema: v1
+
+models:
+  - name: Claude Sonnet 5.5
+    provider: openai
+    model: claude-sonnet-5-5
+    apiBase: https://api.outrun.to/v1/
+    apiKey: ${{ secrets.OUTRUN_API_KEY }}
+    roles:
+      - chat
+      - edit
+      - apply
+
+  - name: GPT-5.6 Sol
+    provider: openai
+    model: gpt-5.6-sol
+    apiBase: https://api.outrun.to/v1/
+    apiKey: ${{ secrets.OUTRUN_API_KEY }}
+
+  - name: Gemini 3.8 Flash
+    provider: openai
+    model: gemini-3.8-flash
+    apiBase: https://api.outrun.to/v1/
+    apiKey: ${{ secrets.OUTRUN_API_KEY }}
+
+  - name: DeepSeek V4 Pro
+    provider: openai
+    model: deepseek-v4-pro
+    apiBase: https://api.outrun.to/v1/
+    apiKey: ${{ secrets.OUTRUN_API_KEY }}

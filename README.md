@@ -108,6 +108,8 @@ Ready config files, copied from the setup guides in the Outrun docs:
 | OpenCode | [configs/opencode](configs/opencode) | OpenAI Chat Completions | [setup/opencode](https://outrun.to/docs/setup/opencode?utm_source=github&utm_medium=repo&utm_campaign=examples) |
 | Cline | [configs/cline](configs/cline) | OpenAI Chat Completions | [setup/cline](https://outrun.to/docs/setup/cline?utm_source=github&utm_medium=repo&utm_campaign=examples) |
 | Roo Code | [configs/roo-code](configs/roo-code) | OpenAI Chat Completions | [setup/uncensored](https://outrun.to/docs/setup/uncensored?utm_source=github&utm_medium=repo&utm_campaign=examples) |
+| Goose | [configs/goose](configs/goose) | OpenAI Chat Completions | [API reference](https://outrun.to/docs/api?utm_source=github&utm_medium=repo&utm_campaign=examples) |
+| Continue | [configs/continue](configs/continue) | OpenAI Chat Completions | [API reference](https://outrun.to/docs/api?utm_source=github&utm_medium=repo&utm_campaign=examples) |
 
 The docs also cover Gemini CLI, Grok Build CLI, the Codex desktop app and Zo Computer.
 
